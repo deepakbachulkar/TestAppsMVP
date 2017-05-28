@@ -92,9 +92,11 @@ public class MainActivity extends AppCompatActivity implements MainView
             //  Sqlite or Realm related  class and interface add in packages.
                              //---&---
             // Another solve for updated code by server API.
+            Log.d("","Version Code: "+AppPreferences.getVersion(getApplicationContext())+ " : isVersion: "+isVersion);
+            Toast.makeText(getApplicationContext(), "Here! Updated New Code When First Time Call Only! Version-"
+                    +AppPreferences.getVersion(getApplicationContext()), Toast.LENGTH_LONG).show();
         }
-        Log.d("","Version Code: "+AppPreferences.getVersion(getApplicationContext())+ " : isVersion: "+isVersion);
-//        Toast.makeText(getApplicationContext(), "Version:"+ AppPreferences.getVersion(getApplicationContext()), Toast.LENGTH_SHORT).show();
+//
     }
 
     @Override

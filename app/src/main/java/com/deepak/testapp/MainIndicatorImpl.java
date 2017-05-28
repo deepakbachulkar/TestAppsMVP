@@ -84,7 +84,7 @@ public class MainIndicatorImpl implements MainInteractor
         }catch (Exception e){ }
 
         // This code will updated in next version. After Updated  Sqlite or Realm below code is remove.
-        if(AppPreferences.getVersion(context)>version)
+        if(AppPreferences.getVersion(context)<version)
         {
                 listener.onVersionCheck(true);
         }else
